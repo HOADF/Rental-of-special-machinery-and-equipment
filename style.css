@@ -62,7 +62,7 @@ nav ul li a:hover {
 /* Слайдер с фоновыми изображениями */
 .hero-slider {
     position: relative;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
 }
 

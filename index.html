@@ -3,187 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СпецТехАренда | Аренда спецтехники</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ТехноПарк - Аренда спецтехники</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Шапка сайта с навигацией -->
+    <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <a href="#" class="logo">Спец<span>Тех</span>Аренда</a>
-                <nav class="nav">
-                    <a class="nav__link" href="#services">Услуги</a>
-                    <a class="nav__link" href="#catalog">Каталог</a>
-                    <a class="nav__link" href="#about">О нас</a>
-                    <a class="nav__link" href="#contacts">Контакты</a>
-                </nav>
-                <a class="btn" href="#contacts">Заказать звонок</a>
+            <div class="logo">
+                <h1>ТехноПарк</h1>
+                <span>Аренда спецтехники</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:+78001234567" class="phone-link">8 (800) 123-45-67</a>
+                <button class="callback-btn">Заказать звонок</button>
             </div>
         </div>
     </header>
 
-    <!-- Главный баннер -->
+    <!-- Hero Section with Slider -->
     <section class="hero">
-        <div class="container">
-            <h1 class="hero__title">Аренда специализированной техники</h1>
-            <p class="hero__text">Надёжная техника для любых задач с полным сопровождением</p>
-            <a class="btn btn--large" href="#catalog">Смотреть каталог</a>
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2>Аренда современной спецтехники</h2>
+                    <p>Полный парк техники для любых задач с профессиональными операторами</p>
+                    <a href="#" class="cta-button">Выбрать технику</a>
+                </div>
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1621466558505-4c8c2c071b3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Строительная техника">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Круглосуточная поддержка</h2>
+                    <p>Работаем 24/7 для вашего комфорта и оперативного решения задач</p>
+                    <a href="#" class="cta-button">Наши услуги</a>
+                </div>
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1611016189890-4f4c2a214f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Экскаватор">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Доставка техники на объект</h2>
+                    <p>Обеспечим быструю доставку любой техники в нужную точку</p>
+                    <a href="#" class="cta-button">Подробнее</a>
+                </div>
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1584995493167-5b725df3415d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Бульдозер">
+                </div>
+            </div>
         </div>
+        <div class="slider-controls">
+            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots"></div>
     </section>
 
-    <!-- Секция с услугами -->
-    <section id="services" class="services section">
+    <!-- Advantages Section -->
+    <section class="advantages">
         <div class="container">
-            <h2 class="section__title">Наши услуги</h2>
-            <div class="services__inner">
-                <div class="service__item">
-                    <img src="https://picsum.photos/80/80?grayscale&random=1" alt="Иконка услуги">
-                    <h3>Строительная техника</h3>
-                    <p>Экскаваторы, бульдозеры, погрузчики и другая техника для строительных работ</p>
+            <h2 class="section-title">Наши преимущества</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Работаем 24/7</h3>
+                    <p>Обеспечиваем аренду техники в любое время суток</p>
                 </div>
-                <div class="service__item">
-                    <img src="https://picsum.photos/80/80?grayscale&random=2" alt="Иконка услуги">
-                    <h3>Дорожные работы</h3>
-                    <p>Катки, асфальтоукладчики, автогрейдеры для дорожного строительства</p>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-ruble-sign"></i>
+                    </div>
+                    <h3>Прозрачные цены</h3>
+                    <p>Никаких скрытых платежей и комиссий</p>
                 </div>
-                <div class="service__item">
-                    <img src="https://picsum.photos/80/80?grayscale&random=3" alt="Иконка услуги">
-                    <h3>Грузоперевозки</h3>
-                    <p>Самосвалы, краны-манипуляторы, низкорамные тралы для перевозки грузов</p>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Квалифицированные операторы</h3>
+                    <p>Все машинисты имеют большой опыт работы</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Полная страховка</h3>
+                    <p>Все риски застрахованы</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Секция с каталогом техники -->
-    <section id="catalog" class="catalog section section--gray">
+    <!-- Catalog Section -->
+    <section class="catalog">
         <div class="container">
-            <h2 class="section__title">Каталог техники</h2>
-            <div class="catalog__inner">
-                <div class="tech__card">
-                    <img src="https://picsum.photos/300/200?random=4" alt="Экскаватор">
-                    <div class="tech__card-content">
-                        <h3>Экскаватор-погрузчик</h3>
-                        <ul>
-                            <li>Грузоподъёмность: <span>2500 кг</span></li>
-                            <li>Объём ковша: <span>1,2 м³</span></li>
-                            <li>Цена: <span>от 1500 руб/час</span></li>
-                        </ul>
-                        <button class="btn tech__btn">Заказать</button>
-                    </div>
-                </div>
-                <div class="tech__card">
-                    <img src="https://picsum.photos/300/200?random=5" alt="Фронтальный погрузчик">
-                    <div class="tech__card-content">
-                        <h3>Фронтальный погрузчик</h3>
-                        <ul>
-                            <li>Грузоподъёмность: <span>4000 кг</span></li>
-                            <li>Объём ковша: <span>2,3 м³</span></li>
-                            <li>Цена: <span>от 2000 руб/час</span></li>
-                        </ul>
-                        <button class="btn tech__btn">Заказать</button>
-                    </div>
-                </div>
-                <div class="tech__card">
-                    <img src="https://picsum.photos/300/200?random=6" alt="Автокран">
-                    <div class="tech__card-content">
-                        <h3>Автокран</h3>
-                        <ul>
-                            <li>Грузоподъёмность: <span>25 тонн</span></li>
-                            <li>Длина стрелы: <span>22 метра</span></li>
-                            <li>Цена: <span>от 3000 руб/час</span></li>
-                        </ul>
-                        <button class="btn tech__btn">Заказать</button>
-                    </div>
-                </div>
-                <div class="tech__card">
-                    <img src="https://picsum.photos/300/200?random=7" alt="Каток">
-                    <div class="tech__card-content">
-                        <h3>Вибрационный каток</h3>
-                        <ul>
-                            <li>Масса: <span>8 тонн</span></li>
-                            <li>Ширина вальца: <span>1,5 метра</span></li>
-                            <li>Цена: <span>от 1800 руб/час</span></li>
-                        </ul>
-                        <button class="btn tech__btn">Заказать</button>
-                    </div>
-                </div>
+            <h2 class="section-title">Каталог техники</h2>
+            <div class="categories">
+                <button class="category-btn active">Вся техника</button>
+                <button class="category-btn">Экскаваторы</button>
+                <button class="category-btn">Погрузчики</button>
+                <button class="category-btn">Краны</button>
+                <button class="category-btn">Бульдозеры</button>
             </div>
-        </div>
-    </section>
-
-    <!-- Секция "О компании" -->
-    <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section__title">О нашей компании</h2>
-            <div class="about__inner">
-                <div class="about__content">
-                    <p>Мы предоставляем услуги аренды специализированной техники более 10 лет. Наш парк регулярно обновляется и включает только современную, надежную технику от проверенных производителей.</p>
-                    <p>Все машины проходят регулярное техническое обслуживание и имеют необходимые допуски и разрешения для работы на строительных объектах.</p>
-                    <div class="about__features">
-                        <div class="about__feature">
-                            <h4>50+</h4>
-                            <p>единиц техники</p>
-                        </div>
-                        <div class="about__feature">
-                            <h4>24/7</h4>
-                            <p>техническая поддержка</p>
-                        </div>
-                        <div class="about__feature">
-                            <h4>100+</h4>
-                            <p>довольных клиентов</p>
+            <div class="technique-grid">
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <img src="https://images.unsplash.com/photo-1574359173084-bfcee66c2c2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Экскаватор-погрузчик">
+                        <div class="technique-overlay">
+                            <button class="quick-view">Быстрый просмотр</button>
                         </div>
                     </div>
+                    <div class="technique-info">
+                        <h3>Экскаватор-погрузчик JCB 4CX</h3>
+                        <div class="technique-specs">
+                            <div class="spec">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>Грузоподъемность: 4т</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-shovel"></i>
+                                <span>Объем ковша: 1.3м³</span>
+                            </div>
+                        </div>
+                        <div class="technique-price">
+                            <span class="price">от 1500 ₽/час</span>
+                            <button class="rent-btn">Арендовать</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="about__image">
-                    <img src="https://picsum.photos/500/350?random=8" alt="Наша компания">
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <img src="https://images.unsplash.com/photo-1584995493167-5b725df3415d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Гусеничный экскаватор">
+                        <div class="technique-overlay">
+                            <button class="quick-view">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3>Гусеничный экскаватор CAT 330</h3>
+                        <div class="technique-specs">
+                            <div class="spec">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>Глубина копания: 7.5м</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-shovel"></i>
+                                <span>Объем ковша: 1.8м³</span>
+                            </div>
+                        </div>
+                        <div class="technique-price">
+                            <span class="price">от 2500 ₽/час</span>
+                            <button class="rent-btn">Арендовать</button>
+                        </div>
+                    </div>
                 </div>
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <img src="https://images.unsplash.com/photo-1621466558505-4c8c2c071b3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Фронтальный погрузчик">
+                        <div class="technique-overlay">
+                            <button class="quick-view">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3>Фронтальный погрузчик Volvo L150</h3>
+                        <div class="technique-specs">
+                            <div class="spec">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>Грузоподъемность: 8т</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-shovel"></i>
+                                <span>Объем ковша: 4.5м³</span>
+                            </div>
+                        </div>
+                        <div class="technique-price">
+                            <span class="price">от 2200 ₽/час</span>
+                            <button class="rent-btn">Арендовать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <img src="https://images.unsplash.com/photo-1584995493167-5b725df3415d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Автокран">
+                        <div class="technique-overlay">
+                            <button class="quick-view">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3>Автокран Liebherr LTM 1100</h3>
+                        <div class="technique-specs">
+                            <div class="spec">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>Грузоподъемность: 100т</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-ruler-vertical"></i>
+                                <span>Вылет стрелы: 60м</span>
+                            </div>
+                        </div>
+                        <div class="technique-price">
+                            <span class="price">от 4500 ₽/час</span>
+                            <button class="rent-btn">Арендовать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <img src="https://images.unsplash.com/photo-1611016189890-4f4c2a214f83?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Бульдозер">
+                        <div class="technique-overlay">
+                            <button class="quick-view">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3>Бульдозер CAT D8T</h3>
+                        <div class="technique-specs">
+                            <div class="spec">
+                                <i class="fas fa-horse"></i>
+                                <span>Мощность: 310 л.с.</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>Ширина отвала: 4.2м</span>
+                            </div>
+                        </div>
+                        <div class="technique-price">
+                            <span class="price">от 2800 ₽/час</span>
+                            <button class="rent-btn">Арендовать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-image">
+                        <img src="https://images.unsplash.com/photo-1584995493167-5b725df3415d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Самосвал">
+                        <div class="technique-overlay">
+                            <button class="quick-view">Быстрый просмотр</button>
+                        </div>
+                    </div>
+                    <div class="technique-info">
+                        <h3>Самосвал Bell B40E</h3>
+                        <div class="technique-specs">
+                            <div class="spec">
+                                <i class="fas fa-weight-hanging"></i>
+                                <span>Грузоподъемность: 38т</span>
+                            </div>
+                            <div class="spec">
+                                <i class="fas fa-truck-loading"></i>
+                                <span>Объем кузова: 23м³</span>
+                            </div>
+                        </div>
+                        <div class="technique-price">
+                            <span class="price">от 1900 ₽/час</span>
+                            <button class="rent-btn">Арендовать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-actions">
+                <button class="view-all-btn">Смотреть всю технику</button>
             </div>
         </div>
     </section>
 
-    <!-- Секция с контактами -->
-    <section id="contacts" class="contacts section section--gray">
+    <!-- CTA Section -->
+    <section class="cta">
         <div class="container">
-            <h2 class="section__title">Контакты</h2>
-            <div class="contacts__inner">
-                <div class="contacts__info">
-                    <h3>Наши контакты</h3>
-                    <p><strong>Адрес:</strong> г. Москва, ул. Строителей, 15</p>
-                    <p><strong>Телефон:</strong> <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@spectech.ru">info@spectech.ru</a></p>
-                    <p><strong>Режим работы:</strong> Пн-Пт: 9:00-18:00</p>
-                </div>
-                <div class="contacts__form">
-                    <h3>Оставьте заявку</h3>
-                    <form id="contactForm">
-                        <input type="text" placeholder="Ваше имя" required>
-                        <input type="tel" placeholder="Ваш телефон" required>
-                        <textarea placeholder="Сообщение" rows="4"></textarea>
-                        <button type="submit" class="btn btn--large">Отправить</button>
-                    </form>
-                </div>
+            <div class="cta-content">
+                <h2>Готовы обсудить ваш проект?</h2>
+                <p>Оставьте заявку и наш менеджер свяжется с вами в течение 15 минут</p>
+                <form class="cta-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <button type="submit">Отправить заявку</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Подвал сайта -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__inner">
-                <div class="footer__copyright">
-                    <p>© 2025 СпецТехАренда. Все права защищены.</p>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <h2>ТехноПарк</h2>
+                        <span>Аренда спецтехники</span>
+                    </div>
+                    <p>Предоставляем услуги аренды спецтехники с профессиональными операторами для любых задач.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
-                <div class="footer__social">
-                    <a href="#"><img src="https://picsum.photos/30/30?random=9" alt="VK"></a>
-                    <a href="#"><img src="https://picsum.photos/30/30?random=10" alt="Telegram"></a>
-                    <a href="#"><img src="https://picsum.photos/30/30?random=11" alt="WhatsApp"></a>
+                <div class="footer-col">
+                    <h3>Техника</h3>
+                    <ul>
+                        <li><a href="#">Экскаваторы</a></li>
+                        <li><a href="#">Погрузчики</a></li>
+                        <li><a href="#">Краны</a></li>
+                        <li><a href="#">Бульдозеры</a></li>
+                        <li><a href="#">Самосвалы</a></li>
+                    </ul>
                 </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Строителей, 15</li>
+                        <li><i class="fas fa-phone"></i> 8 (800) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@technopark.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Вс: 24/7</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Как нас найти</h3>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.372789924226!2d37.61749291585937!3d55.75582668055209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5b2c5b3b3b%3A0x2b2b2b2b2b2b2b2b!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiDQutC-0LzQv9GM0Y7RgtC10YDQvtCy!5e0!3m2!1sru!2sru!4v1621500000000!5m2!1sru!2sru" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ТехноПарк. Все права защищены.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="callback-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Заказать звонок</h2>
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="technique-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="technique-modal-content">
+                <!-- Content will be filled by JavaScript -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

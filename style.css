@@ -62,8 +62,13 @@ nav ul li a:hover {
 /* Слайдер с фоновыми изображениями */
 .hero-slider {
     position: relative;
-    height: 70vh;
+    height: 450px; /* Уменьшенная высота */
     overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    margin: 30px auto; /* Отступы сверху и снизу */
+    max-width: 1000px; /* Ограничение максимальной ширины */
+    border: 3px solid #FF8C00;
 }
 
 .cb-slideshow {
@@ -74,6 +79,7 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     width: 100%;
+    border-radius: 10px;
 }
 
 .cb-slideshow:after {
@@ -81,11 +87,12 @@ nav ul li a:hover {
     display: block;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,.3);
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+    border-radius: 10px;
 }
 
 .cb-slideshow li {
@@ -97,6 +104,7 @@ nav ul li a:hover {
     opacity: 0;
     z-index: 0;
     animation: imageAnimation 30s linear infinite 0s;
+    border-radius: 10px;
 }
 
 .cb-slideshow li span {
@@ -107,21 +115,37 @@ nav ul li a:hover {
     left: 0;
     color: transparent;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center center;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 .cb-slideshow li .slide-content {
     z-index: 1000;
     position: absolute;
-    bottom: 100px;
+    bottom: 60px;
     left: 0;
     width: 100%;
     text-align: center;
     opacity: 1;
     color: #fff;
     padding: 20px;
-    background-color: rgba(255, 140, 0, 0.7);
+    background-color: rgba(255, 140, 0, 0.85);
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.cb-slideshow li .slide-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cb-slideshow li .slide-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .cb-slideshow li:nth-child(2) {
@@ -138,6 +162,71 @@ nav ul li a:hover {
 
 .cb-slideshow li:nth-child(5) {
     animation-delay: 24s;
+}
+
+/* Анимация для слайдера */
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.03);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 350px;
+        margin: 20px auto;
+    }
+    
+    .cb-slideshow li .slide-content {
+        bottom: 40px;
+        padding: 15px;
+    }
+    
+    .cb-slideshow li .slide-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .cb-slideshow li .slide-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider {
+        height: 300px;
+        margin: 15px auto;
+    }
+    
+    .cb-slideshow li .slide-content {
+        bottom: 20px;
+        padding: 10px;
+    }
+    
+    .cb-slideshow li .slide-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .cb-slideshow li .slide-content p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Анимация для слайдера */

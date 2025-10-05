@@ -1,143 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DemoRent - Демо страница аренды спецтехники</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DemoRent — Демо страница аренды спецтехники</title>
+
+  <meta name="description" content="DemoRent — демонстрация современного сайта аренды спецтехники. Слайдер, анимации, плавная прокрутка и адаптивный дизайн.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3208/3208734.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="demo-banner">🚧 Это демонстрационный проект. Сайт создан в учебных целях. 🚧</div>
 
-    <!-- Шапка сайта -->
-    <header>
-        <div class="container">
-            <h1>DemoRent</h1>
-            <p>Демонстрационная страница аренды специализированной техники для любых задач</p>
-            <nav>
-                <ul>
-                    <li><a href="#home">Главная</a></li>
-                    <li><a href="#technics">Техника</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#about">О компании</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <div class="demo-banner">🚧 Это демонстрационный проект. Сайт создан в учебных целях. 🚧</div>
 
-    <!-- Секция с меняющимся фоном -->
-    <section class="hero-slider" id="home">
-        <div class="cb-slideshow">
-            <li>
-                <span style="background-image: url('https://avatars.mds.yandex.net/i?id=bbd8c54752065422100918e14af284f4_l-4866546-images-thumbs&n=13')"></span>
-                <div class="slide-content">
-                    <h3>Экскаватор - погрузчик</h3>
-                    <p>Полнокомплексные земляные работы любой сложности</p>
-                </div>
-            </li>
-            <li>
-                <span style="background-image: url('https://avatars.mds.yandex.net/get-altay/10385418/2a00000191c6ea251fb81f4c221e4497e7e0/XXL_height')"></span>
-                <div class="slide-content">
-                    <h3>Бульдозеры</h3>
-                    <p>Планировка территории и перемещение грунта</p>
-                </div>
-            </li>
-            <li>
-                <span style="background-image: url('https://avatars.mds.yandex.net/get-ydo/12406519/2a0000018e0942a34b18863605601a6d6085/diploma')"></span>
-                <div class="slide-content">
-                    <h3>Автокраны</h3>
-                    <p>Грузоподъемность от 16 до 100 тонн</p>
-                </div>
-            </li>
-            <li>
-                <span style="background-image: url('https://www.agscenter.ru/upload/iblock/4aa/17870952490_83273c05e5_b.jpg')"></span>
-                <div class="slide-content">
-                    <h3>Самосвалы</h3>
-                    <p>Перевозка сыпучих материалов и грунта</p>
-                </div>
-            </li>
-            <li>
-                <span style="background-image: url('https://md-progress.ru/upload/iblock/9db/j4frhn8kqwxr6q0k8nki04q5qey1jr3m/kak_vyibrat_vilochnyiy_pogruzchik_article_2.jpg')"></span>
-                <div class="slide-content">
-                    <h3>Погрузчики</h3>
-                    <p>Погрузочно-разгрузочные работы любой сложности</p>
-                </div>
-            </li>
+  <!-- Шапка -->
+  <header>
+    <div class="container">
+      <h1>DemoRent</h1>
+      <p>Демонстрационная страница аренды специализированной техники</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#technics">Техника</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">О компании</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero-секция со слайдером -->
+  <section class="hero-slider" id="home">
+    <ul class="cb-slideshow">
+      <li>
+        <span style="background-image:url('https://avatars.mds.yandex.net/i?id=bbd8c54752065422100918e14af284f4_l-4866546-images-thumbs&n=13')"></span>
+        <div class="slide-content">
+          <h3>Экскаватор - погрузчик</h3>
+          <p>Земляные работы любой сложности</p>
         </div>
+      </li>
+      <li>
+        <span style="background-image:url('https://avatars.mds.yandex.net/get-altay/10385418/2a00000191c6ea251fb81f4c221e4497e7e0/XXL_height')"></span>
+        <div class="slide-content">
+          <h3>Бульдозеры</h3>
+          <p>Планировка территории и перемещение грунта</p>
+        </div>
+      </li>
+      <li>
+        <span style="background-image:url('https://avatars.mds.yandex.net/get-ydo/12406519/2a0000018e0942a34b18863605601a6d6085/diploma')"></span>
+        <div class="slide-content">
+          <h3>Автокраны</h3>
+          <p>Грузоподъемность от 16 до 100 тонн</p>
+        </div>
+      </li>
+      <li>
+        <span style="background-image:url('https://www.agscenter.ru/upload/iblock/4aa/17870952490_83273c05e5_b.jpg')"></span>
+        <div class="slide-content">
+          <h3>Самосвалы</h3>
+          <p>Перевозка сыпучих материалов и грунта</p>
+        </div>
+      </li>
+      <li>
+        <span style="background-image:url('https://md-progress.ru/upload/iblock/9db/j4frhn8kqwxr6q0k8nki04q5qey1jr3m/kak_vyibrat_vilochnyiy_pogruzchik_article_2.jpg')"></span>
+        <div class="slide-content">
+          <h3>Погрузчики</h3>
+          <p>Любые погрузочно-разгрузочные работы</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Основное содержимое -->
+  <main class="container">
+    <section id="about">
+      <h2>О компании</h2>
+      <p>DemoRent предлагает услуги аренды специализированной техники для строительных, дорожных и других видов работ. Техника регулярно обслуживается и всегда готова к работе.</p>
     </section>
 
-    <!-- Основное содержимое -->
-    <main class="container">
-        <!-- Секция "О компании" -->
-        <section id="about">
-            <h2>О нашей компании</h2>
-            <p>DemoRent предлагает услуги аренды специализированной техники для строительных, дорожных и других работ. Наш парк техники регулярно обновляется и проходит техническое обслуживание.</p>
-        </section>
+    <section id="technics">
+      <h2>Наша техника</h2>
+      <div class="technics-grid">
+        <div class="technic-item">
+          <img src="https://40.img.avito.st/image/1/1.b0NenraDw6owNiOgDLMoIC4_wazgNRmjCjXBqOYjw6DKMflg6T0.5IAAKllMAt4Crp6ELkCEIx8-JQNQbDABcVc7QF0CyEg" alt="Экскаватор">
+          <h3>Экскаваторы</h3>
+          <p>От 1500 ₽/час</p>
+        </div>
+        <div class="technic-item">
+          <img src="https://i.pinimg.com/originals/17/e5/fc/17e5fc7ad3e3fdcaa8a5acad4f35b5e3.jpg" alt="Бульдозер">
+          <h3>Бульдозеры</h3>
+          <p>От 2000 ₽/час</p>
+        </div>
+        <div class="technic-item">
+          <img src="https://avatars.mds.yandex.net/get-ydo/9712213/2a0000019522b11c7d1cdfdb8adc23ae6a04/diploma" alt="Автокран">
+          <h3>Автокраны</h3>
+          <p>От 2500 ₽/час</p>
+        </div>
+        <div class="technic-item">
+          <img src="https://avatars.mds.yandex.net/get-ydo/9710801/2a0000018b21ce184da3764c804e84c342a4/diploma" alt="Самосвал">
+          <h3>Самосвалы</h3>
+          <p>От 1800 ₽/час</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Секция "Наша техника" -->
-        <section id="technics">
-            <h2>Наша техника</h2>
-            <div class="technics-grid">
-                <div class="technic-item">
-                    <img src="https://40.img.avito.st/image/1/1.b0NenraDw6owNiOgDLMoIC4_wazgNRmjCjXBqOYjw6DKMflg6T0.5IAAKllMAt4Crp6ELkCEIx8-JQNQbDABcVc7QF0CyEg" alt="Экскаватор - погрузчик">
-                    <h3>Экскаватор - погрузчики</h3>
-                    <p>От 1500 руб/час</p>
-                </div>
-                <div class="technic-item">
-                    <img src="https://i.pinimg.com/originals/17/e5/fc/17e5fc7ad3e3fdcaa8a5acad4f35b5e3.jpg" alt="Бульдозер">
-                    <h3>Бульдозеры</h3>
-                    <p>От 2000 руб/час</p>
-                </div>
-                <div class="technic-item">
-                    <img src="https://avatars.mds.yandex.net/get-ydo/9712213/2a0000019522b11c7d1cdfdb8adc23ae6a04/diploma" alt="Автокран">
-                    <h3>Автокраны</h3>
-                    <p>От 2500 руб/час</p>
-                </div>
-                <div class="technic-item">
-                    <img src="https://avatars.mds.yandex.net/get-ydo/9710801/2a0000018b21ce184da3764c804e84c342a4/diploma" alt="Самосвал">
-                    <h3>Самосвалы</h3>
-                    <p>От 1800 руб/час</p>
-                </div>
-                <div class="technic-item">
-                    <img src="https://avatars.mds.yandex.net/get-ydo/4079136/2a0000018954727e0d794b4df773e37c9d84/diploma" alt="Погрузчик">
-                    <h3>Погрузчики</h3>
-                    <p>От 1200 руб/час</p>
-                </div>
-                <div class="technic-item">
-                    <img src="https://avatars.mds.yandex.net/i?id=a683fc76d8fe60cecaefcfc39c9cda37_l-5305527-images-thumbs&n=13" alt="Бетоновоз">
-                    <h3>Бетоновозы</h3>
-                    <p>От 2200 руб/час</p>
-                </div>
-            </div>
-        </section>
+    <section id="services">
+      <h2>Наши услуги</h2>
+      <ul>
+        <li>Аренда техники с оператором</li>
+        <li>Земляные и монтажные работы</li>
+        <li>Круглосуточное обслуживание</li>
+        <li>Перевозка грузов</li>
+      </ul>
+    </section>
 
-        <!-- Секция "Услуги" -->
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Аренда техники с оператором</li>
-                <li>Строительно-монтажные работы</li>
-                <li>Земляные работы</li>
-                <li>Перевозка грузов</li>
-                <li>Круглосуточная аренда техники</li>
-            </ul>
-        </section>
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>📞 Контакты скрыты в демонстрационной версии.</p>
+      <p>💬 Данный сайт представлен только для ознакомления.</p>
+    </section>
+  </main>
 
-        <section id="contacts">
-          <h2>Контакты</h2>
-          <p>📞 Контакты скрыты в демонстрационной версии.</p>
-          <p>💬 Данный сайт представлен только для ознакомления.</p>
-       </section>
+  <footer class="demo-footer">
+    <p>© 2025 DemoRent — демонстрационная версия сайта. Не является коммерческим предложением.</p>
+  </footer>
 
-    </main>
+  <!-- Кнопка наверх -->
+  <button id="toTop" title="Наверх">↑</button>
 
-    <!-- Подвал сайта -->
-    <footer class="demo-footer">
-      <p>© 2025 DemoRent — демонстрационная версия сайта. Не является коммерческим предложением.</p>
-    </footer>
-
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

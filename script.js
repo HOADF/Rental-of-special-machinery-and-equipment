@@ -1,16 +1,3 @@
-// === Предзагрузка изображений ===
-function preloadImages() {
-  const urls = [
-    'https://source.unsplash.com/1600x900/?excavator,construction',
-    'https://source.unsplash.com/1600x900/?bulldozer,construction',
-    'https://source.unsplash.com/1600x900/?crane,construction',
-    'https://source.unsplash.com/1600x900/?truck,construction',
-    'https://source.unsplash.com/1600x900/?loader,construction'
-  ];
-  urls.forEach(url => { const img = new Image(); img.src = url; });
-}
-window.addEventListener('load', preloadImages);
-
 // === Плавная прокрутка ===
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', e => {
@@ -21,7 +8,7 @@ document.querySelectorAll('nav a').forEach(link => {
 });
 
 // === Анимации при прокрутке + фиксированная шапка ===
-window.addEventListener('scroll', () => {
+function updateOnScroll() {
   const header = document.querySelector('header');
   const body = document.body;
   const elements = document.querySelectorAll('section');
@@ -44,7 +31,11 @@ window.addEventListener('scroll', () => {
   // Кнопка наверх
   const toTop = document.getElementById('toTop');
   toTop.style.display = window.scrollY > 500 ? 'block' : 'none';
-});
+}
+window.addEventListener('scroll', updateOnScroll);
+// Запуск сразу при загрузке — иначе контент остаётся невидимым (opacity: 0)
+// до первой прокрутки страницы пользователем.
+window.addEventListener('DOMContentLoaded', updateOnScroll);
 
 // === Кнопка наверх ===
 document.getElementById('toTop').addEventListener('click', () => {
